@@ -1,0 +1,25 @@
+Source: dmidecode
+Section: utils
+Priority: optional
+Maintainer: Petter Reinholdtsen <pere@debian.org>
+Build-Depends: debhelper (>= 6), dpatch
+Standards-Version: 3.7.2
+
+Package: dmidecode
+Priority: important
+Architecture: i386 ia64 amd64 kfreebsd-i386 knetbsd-i386 kfreebsd-amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: lm-sensors (<< 2.8.1-2)
+Description: Dump Desktop Management Interface data
+ The Desktop Management Interface provides a standardized description of
+ a computer's hardware, including characteristics such as BIOS serial
+ number and hardware connectors.  dmidecode provides a dump of the DMI
+ data available from the BIOS.  It is used as a back-end tool by other
+ hardware detection programs.
+
+Package: dmidecode-udeb
+XC-Package-Type: udeb
+Section: debian-installer
+Architecture: i386 ia64 amd64 kfreebsd-i386 knetbsd-i386 kfreebsd-amd64
+Depends: ${shlibs:Depends}
+Description: Dump Desktop Management Interface data (udeb)
