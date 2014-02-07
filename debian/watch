@@ -1,6 +1,0 @@
-# watch file,  `man uscan` for more information
-version=2
-
-http://savannah.nongnu.org/download/dmidecode/dmidecode-(.*)\.tar\.gz
-
-# end of file

@@ -1,3 +1,95 @@
+dmidecode (2.11-9) unstable; urgency=low
+
+  * Adding debug package.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Fri, 18 May 2012 13:29:25 +0200
+
+dmidecode (2.11-8) unstable; urgency=low
+
+  * Using package type instead of custom field for udeb package.
+  * Adding patch to escape hypens in manpage.
+  * Also passing cppflags to make (Closes: #655891).
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Fri, 18 May 2012 12:36:27 +0200
+
+dmidecode (2.11-7) unstable; urgency=low
+
+  * Updating compression handling for udeb with newer debhelper.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Fri, 18 May 2012 08:00:01 +0200
+
+dmidecode (2.11-6) unstable; urgency=low
+
+  * Also passing ldflags to configure to enable all hardening build
+    flags (Closes: #655891).
+  * Updating to standards version 3.9.3.
+  * Updating copyright file machine-readable format version 1.0.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Mon, 16 Apr 2012 09:23:37 +0000
+
+dmidecode (2.11-5) unstable; urgency=low
+
+  * Updating year in copyright file.
+  * Updating to debhelper version 9.
+  * Adding patch to avoid overwriting build environment rather than to
+    just extend it.
+  * Simplifying CFLAGS handing in rules.
+  * Enabling hardening build options (Closes: #655891).
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Sat, 21 Jan 2012 11:16:31 +0100
+
+dmidecode (2.11-4) unstable; urgency=low
+
+  * Using compression level 9 also for binary packages.
+  * Adding patch from Jean Delvare <khali@linux-fr.org> to fix boundary
+    checks of memory array location codes (DMI type 16).
+  * Adding patch from Jean Delvare <khali@linux-fr.org> to update to
+    support SMBIOS specification version 2.7.1.
+  * Sorting overrides in rules alphabetically.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Fri, 28 Oct 2011 21:54:37 +0200
+
+dmidecode (2.11-3) unstable; urgency=low
+
+  * Adding patch from Svante Signell <svante.signell@telia.com> to
+    enable build of all targets on GNU/Hurd (Closes: #643649).
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Wed, 28 Sep 2011 13:03:50 +0200
+
+dmidecode (2.11-2) unstable; urgency=low
+
+  * Adding patch from Stefan Tauner <stefan.tauner@student.tuwien.ac.at>
+    to correctly decode the chassis-type (Closes: #637028).
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Wed, 28 Sep 2011 06:42:29 +0200
+
+dmidecode (2.11-1) unstable; urgency=low
+
+  * Taking over package from Petter with thanks for his past work on the
+    package.
+  * Merging upstream version 2.11 (Closes: #531843, #639169).
+  * Removing useless whitespaces at EOL and EOF.
+  * Updating to debhelper version 8.
+  * Updating to standards version 3.9.2.
+  * Adding homepage field.
+  * Switching to source format 3.0 (quilt).
+  * Removing pre-squeeze conflict against lm-sensors.
+  * Using architecture patterns (Closes: #480571).
+  * Sorting depends.
+  * Adding misc-depends to udeb.
+  * Removing watch file.
+  * Rewriting package descriptions.
+  * Rewriting copyright file in machine-interpretable format.
+  * Prefixing debhelper files with package name.
+  * Adding authors file to docs.
+  * Minimizing rules file.
+  * Sorting fields in control.
+  * Removing unused debhelper dirs files.
+  * Adding debhelper install files.
+  * Avoid installing readme file, no additional useful content.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Tue, 27 Sep 2011 21:23:46 +0200
+
 dmidecode (2.9-1.2) unstable; urgency=low
 
   * Non-maintainer upload.
@@ -200,4 +292,3 @@ dmidecode (2.3-1) unstable; urgency=low
   * Use <endian.h> to detect if BIGENDIAN should be defined.
 
  -- Petter Reinholdtsen <pere@debian.org>  Sun,  9 Nov 2003 09:54:14 +0100
-
