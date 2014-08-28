@@ -2,8 +2,8 @@ Author: Daniel Baumann <daniel.baumann@progress-technologies.net>
 Description: Escaping hyphens in manpage.
 
 diff -Naurp dmidecode.orig/man/dmidecode.8 dmidecode/man/dmidecode.8
---- dmidecode.orig/man/dmidecode.8	2012-04-26 09:42:14.545943874 +0200
-+++ dmidecode/man/dmidecode.8	2012-05-18 12:18:31.345355547 +0200
+--- dmidecode.orig/man/dmidecode.8	2012-06-25 23:23:43.849293701 +0200
++++ dmidecode/man/dmidecode.8	2012-06-26 01:12:39.578227162 +0200
 @@ -8,7 +8,7 @@ dmidecode \- \s-1DMI\s0 table decoder
  .SH DESCRIPTION
  .B dmidecode
@@ -129,9 +129,9 @@ diff -Naurp dmidecode.orig/man/dmidecode.8 dmidecode/man/dmidecode.8
 -Options --string, --type and --dump-bin
 +Options \-\-string, \-\-type and \-\-dump\-bin
  determine the output format and are mutually exclusive.
- 
- .SH "DMI TYPES"
-@@ -154,10 +154,10 @@ Type	Information
+ .P
+ Please note in case of
+@@ -161,10 +161,10 @@ Type	Information
  15	System Event Log
  16	Physical Memory Array
  17	Memory Device
@@ -144,7 +144,7 @@ diff -Naurp dmidecode.orig/man/dmidecode.8 dmidecode/man/dmidecode.8
  22	Portable Battery
  23	System Reset
  24	Hardware Security
-@@ -166,10 +166,10 @@ Type	Information
+@@ -173,10 +173,10 @@ Type	Information
  27	Cooling Device
  28	Temperature Probe
  29	Electrical Current Probe
@@ -157,7 +157,7 @@ diff -Naurp dmidecode.orig/man/dmidecode.8 dmidecode/man/dmidecode.8
  34	Management Device
  35	Management Device Component
  36	Management Device Threshold Data
-@@ -181,12 +181,12 @@ Type	Information
+@@ -189,12 +189,12 @@ Type	Information
  .TE
  
  Additionally, type 126 is used for disabled entries and type 127 is an
@@ -172,7 +172,7 @@ diff -Naurp dmidecode.orig/man/dmidecode.8 dmidecode/man/dmidecode.8
  Each keyword is equivalent to a list of type numbers:
  
  .TS
-@@ -205,22 +205,22 @@ connector	8
+@@ -213,22 +213,22 @@ connector	8
  slot	9
  .TE
  

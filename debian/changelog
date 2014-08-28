@@ -1,3 +1,50 @@
+dmidecode (2.12-3) unstable; urgency=medium
+
+  * debian/control
+    - bump Standards-Version to 3.9.5
+    - add Vcs-*
+  * New Maintainer ( Closes: #748486)
+
+ -- Jörg Frings-Fürst <debian@jff-webhosting.net>  Mon, 19 May 2014 18:01:43 +0200
+
+dmidecode (2.12-2) unstable; urgency=low
+
+  * Also build for armhf (Closes: #715139).
+
+ -- Luk Claes <luk@debian.org>  Thu, 15 Aug 2013 11:24:31 +0200
+
+dmidecode (2.12-1) unstable; urgency=low
+
+  * New upstream version.
+  * Add watch file.
+  * Add upstream patch to kill warnings (Closes: #706004).
+
+ -- Luk Claes <luk@debian.org>  Tue, 07 May 2013 08:52:36 +0200
+
+dmidecode (2.11+20120326-3) unstable; urgency=low
+
+  * Take over maintenance with maintainer's consent.
+
+ -- Luk Claes <luk@debian.org>  Sun, 10 Mar 2013 21:55:43 +0100
+
+dmidecode (2.11+20120326-2) unstable; urgency=low
+
+  * Updating GPL boilerplate in copyright file.
+  * Switching to xz compression.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Fri, 29 Jun 2012 04:59:24 +0200
+
+dmidecode (2.11+20120326-1) unstable; urgency=low
+
+  * Merging upstream version 2.11+20120326.
+  * Removing chassis-type.patch, included upstream.
+  * Removing type16-fix.patch, including upstream.
+  * Removing smbios-271.patch, included upstream.
+  * Rediffing manpage-hyphen.patch.
+  * Renumbering patches.
+
+ -- Daniel Baumann <daniel.baumann@progress-technologies.net>  Tue, 26 Jun 2012 01:07:02 +0200
+
 dmidecode (2.11-9) unstable; urgency=low
 
   * Adding debug package.
